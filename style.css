@@ -1,90 +1,80 @@
-.body {
-    text-align: center;
-    background-color: white;
-    margin: 50px auto;
-    padding: 40px 0;
-    width: 26%;
-}
-
-.img{
-    border-radius: 100%;
-    height: 150px;
-    width: 150px;
-}
-h2{
-    font-size: 22px;
-    margin: 5px;
-    color:#F5549D;
-}
-
-p{
-    margin: 5px auto;
-    color: grey;
-    font-size: 14px;
-}
-
-.activity-level{
-    font-size: 14px;
-    font-weight: 900;
-    color: #262626;
-    
-}
-
-.number {
-    color: #262626;
+* {
+    padding: 0;
     margin: 0;
 }
 
-hr{
-    border: 1px solid whitesmoke;
-    margin: 20px auto;
-}
-
-.activity{
-    margin: 30px auto;
-}
-
-.stt{
-    background-color: gainsboro;
-    padding: 15px 15px;
-    margin: auto;
-}
-
-.stt-content {
-    display: inline-block;
-    padding: 0 20px;
-    
-}
-
-.middle {
-    border-left: 1px solid #262626;
-    border-right: 1px solid #262626;
-}
-
-.icon {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.media-icon{
-    margin: 30px auto;
-}
-
-.smallicon{
-    height: 23px;
-    width: 25px;
-}
-
-.blackicon{
-    height: 20px;
-    width: 30px;
-}
-button{
-    height: 30px;
-    width: 105px;
-    background-color: hotpink;
-    color: white;
-    border: 0px;
+.container {
+    color:white;
+    background-color:rgb(102, 165, 238);
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
     font-size: 14px;
-    
+}
+
+.search-bar{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.search-icon{
+    margin-right: 5px;
+    position: absolute;
+    left: 0;
+    color: white;
+}
+
+#search-input{
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 20px;
+    background: transparent;
+    height: 20px;
+    color: white;
+}
+
+#search-input::placeholder {
+    color: rgb(206,206,206);
+}
+
+.info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    padding: 80px 50px;
+}
+
+.city-name{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.weather-state {
+    font-size: 50px;
+}
+
+.weather-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.temperature{
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
+}
+
+.temperature::after {
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
 }
